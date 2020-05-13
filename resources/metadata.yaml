@@ -1,0 +1,419 @@
+nytimes.com:
+  apis:
+    archive:
+      1.0.0:
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filepath: /home/mike/node/openapi-directory/APIs
+        source:
+          format: swagger
+          url: https://raw.githubusercontent.com/NYTimes/public_api_specs/master/archive_api/archive_api.json
+          version: "2.0"
+        history: []
+        run: false
+    article_search:
+      1.0.0:
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filepath: /home/mike/node/openapi-directory/APIs
+        source:
+          format: swagger
+          url: https://raw.githubusercontent.com/NYTimes/public_api_specs/master/article_search/article_search_v2.json
+          version: "2.0"
+        history: []
+        run: false
+    books_api:
+      3.0.0:
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filepath: /home/mike/node/openapi-directory/APIs
+        source:
+          format: swagger
+          url: https://raw.githubusercontent.com/NYTimes/public_api_specs/master/books_api/books_api.json
+          version: "2.0"
+        history: []
+        run: false
+    community:
+      3.0.0:
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filepath: /home/mike/node/openapi-directory/APIs
+        source:
+          format: swagger
+          url: https://raw.githubusercontent.com/NYTimes/public_api_specs/master/community/community_api_v3.json
+          version: "2.0"
+        history: []
+        run: false
+    geo_api:
+      1.0.0:
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filepath: /home/mike/node/openapi-directory/APIs
+        source:
+          format: swagger
+          url: https://raw.githubusercontent.com/NYTimes/public_api_specs/master/geo_api/geo_api_v2.json
+          version: "2.0"
+        history: []
+        run: false
+    most_popular_api:
+      2.0.0:
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filepath: /home/mike/node/openapi-directory/APIs
+        source:
+          format: swagger
+          url: https://raw.githubusercontent.com/NYTimes/public_api_specs/master/most_popular_api/most_popular_api_v2.json
+          version: "2.0"
+        history: []
+        run: false
+    movie_reviews:
+      2.0.0:
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filepath: /home/mike/node/openapi-directory/APIs
+        source:
+          format: swagger
+          url: https://raw.githubusercontent.com/NYTimes/public_api_specs/master/movie_reviews/movie_reviews_v2.json
+          version: "2.0"
+        history: []
+        run: false
+    semantic_api:
+      2.0.0:
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filepath: /home/mike/node/openapi-directory/APIs
+        source:
+          format: swagger
+          url: https://raw.githubusercontent.com/NYTimes/public_api_specs/master/semantic_api/semantic_api.json
+          version: "2.0"
+        history: []
+        run: false
+    times_tags:
+      1.0.0:
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filepath: /home/mike/node/openapi-directory/APIs
+        source:
+          format: swagger
+          url: https://raw.githubusercontent.com/NYTimes/public_api_specs/master/times_tags/times_tags_v3.json
+          version: "2.0"
+        history: []
+        run: false
+    timeswire:
+      3.0.0:
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filepath: /home/mike/node/openapi-directory/APIs
+        source:
+          format: swagger
+          url: https://raw.githubusercontent.com/NYTimes/public_api_specs/master/timeswire/timeswire_v3.json
+          version: "2.0"
+        history: []
+        run: false
+    top_stories:
+      2.0.0:
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filepath: /home/mike/node/openapi-directory/APIs
+        source:
+          format: swagger
+          url: https://raw.githubusercontent.com/NYTimes/public_api_specs/master/top_stories/top_stories_v2.json
+          version: "2.0"
+        history: []
+        run: false
+twitter.com:
+  apis:
+    labs:
+      "1.12":
+        name: openapi.yaml
+        openapi: 3.0.0
+        preferred: null
+        filepath: /home/mike/node/openapi-directory/APIs
+        source:
+          &a1
+          format: openapi
+          url: https://api.twitter.com/labs/1/openapi.json
+          version: "3.0"
+        history:
+          - *a1
+        run: true
+        filename: /home/mike/node/openapi-directory/APIs/twitter.com/labs/1.12/openapi.yaml
+        patch:
+          info:
+            x-apisguru-categories:
+              - social
+            contact:
+              x-twitter: twitter
+            x-logo:
+              url: https://twitter.com/twitter/profile_image?size=original
+      "2.4":
+        name: openapi.yaml
+        openapi: 3.0.0
+        preferred: true
+        filepath: /home/mike/node/openapi-directory/APIs
+        source:
+          &a2
+          format: openapi
+          url: https://api.twitter.com/labs/2/openapi.json
+          version: "3.0"
+        history:
+          - *a2
+        run: true
+        filename: /home/mike/node/openapi-directory/APIs/twitter.com/labs/2.4/openapi.yaml
+        patch:
+          info:
+            x-apisguru-categories:
+              - social
+            contact:
+              x-twitter: twitter
+            x-logo:
+              url: https://twitter.com/twitter/profile_image?size=original
+    legacy:
+      "1.1":
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filepath: /home/mike/node/openapi-directory/APIs
+        source:
+          format: swagger
+          url: https://raw.githubusercontent.com/APIs-guru/unofficial_openapi_specs/master/twitter.com/1.1/twitter.json
+          version: "2.0"
+        history:
+          - converter:
+              url: https://github.com/lucybot/api-spec-converter
+              version: 2.6.0
+            format: wadl
+            url: http://api.apigee.com/v1/consoles/twitter/apidescription?format=wadl
+        run: true
+        filename: /home/mike/node/openapi-directory/APIs/twitter.com/legacy/1.1/swagger.yaml
+        patch:
+          info:
+            x-apisguru-categories:
+              - social
+            contact:
+              x-twitter: twitter
+            x-logo:
+              url: https://twitter.com/twitter/profile_image?size=original
+            x-unofficialSpec: true
+covid19-api.com:
+  apis:
+    "":
+      1.0.1:
+        name: openapi.yaml
+        openapi: 3.0.2
+        preferred: null
+        source:
+          format: openapi
+          url: https://covid19-api.com/docs.json
+          version: "3.0"
+        history: []
+        run: false
+        filename: /home/mike/node/openapi-directory/APIs/covid19-api.com/1.0.1/openapi.yaml
+        patch:
+          info:
+            x-apisguru-categories:
+              - open_data
+zoomconnect.com:
+  apis:
+    "":
+      "1":
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filename: /home/mike/node/openapi-directory/APIs/zoomconnect.com/1/swagger.yaml
+        source:
+          converter:
+            url: https://github.com/lucybot/api-spec-converter
+            version: 2.7.31
+          format: swagger
+          url: https://www.zoomconnect.com/zoom/api-docs
+          version: "1.2"
+        history: []
+        patch:
+          info:
+            description: The world's greatest SMS API
+            x-apisguru-categories:
+              - messaging
+              - marketing
+            x-tags:
+              - SMS
+              - bulk SMS
+            x-logo:
+              url: https://zoomconnect.com/assets/logo.png
+          securityDefinitions:
+            email:
+              type: apiKey
+              in: header
+              name: email
+            token:
+              type: apiKey
+              in: header
+              name: token
+        run: false
+zoom.us:
+  apis:
+    "":
+      2.0.0:
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filename: /home/mike/node/openapi-directory/APIs/zoom.us/2.0.0/swagger.yaml
+        source:
+          format: swagger
+          url: https://raw.githubusercontent.com/zoom/api/master/openapi.v2.json
+          version: "2.0"
+        history: []
+        patch:
+          info:
+            x-apisguru-categories:
+              - telecom
+            contact:
+              x-twitter: zoom_us
+            x-logo:
+              url: https://twitter.com/zoom_us/profile_image?size=original
+        run: false
+zuora.com:
+  apis:
+    "":
+      2019-12-27:
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filename: /home/mike/node/openapi-directory/APIs/zuora.com/2019-12-27/swagger.yaml
+        source:
+          format: swagger
+          url: https://www.zuora.com/wp-content/themes/zuora/yaml/swagger.yaml?v-7.0
+          version: "2.0"
+        history: []
+        patch:
+          info:
+            x-apisguru-categories:
+              - financial
+            contact:
+              x-twitter: Zuora
+        run: false
+linode.com:
+  apis:
+    "":
+      4.5.0:
+        name: openapi.yaml
+        openapi: 3.0.1
+        preferred: null
+        filename: /home/mike/node/openapi-directory/APIs/linode.com/4.5.0/openapi.yaml
+        source:
+          converter:
+            url: https://github.com/lucybot/api-spec-converter
+            version: 2.7.31
+          format: openapi
+          url: https://developers.linode.com/api/docs/v4/openapi.yaml
+          version: "3.0"
+        history: []
+        patch:
+          info:
+            x-apisguru-categories:
+              - cloud
+        run: false
+landregistry.gov.uk:
+  apis:
+    deed:
+      1.0.0:
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filename: /home/mike/node/openapi-directory/APIs/landregistry.gov.uk/deed/1.0.0/swagger.yaml
+        source:
+          format: swagger
+          url: https://raw.githubusercontent.com/LandRegistry/dm-deed-api/master/application/deed/schemas/deed-api.json
+          version: "2.0"
+        history: []
+        patch:
+          info:
+            x-apisguru-categories:
+              - open_data
+            contact:
+              x-twitter: HMLandRegistry
+            x-logo:
+              url: https://twitter.com/HMLandRegistry/profile_image?size=original
+        run: false
+wordnik.com:
+  apis:
+    "":
+      "4.0":
+        name: swagger.yaml
+        openapi: "2.0"
+        preferred: null
+        filename: /home/mike/node/openapi-directory/APIs/wordnik.com/4.0/swagger.yaml
+        source:
+          converter:
+            url: https://github.com/lucybot/api-spec-converter
+            version: 2.6.2
+          format: swagger
+          url: https://developer.wordnik.com/api-docs/swagger.json
+          version: "2.0"
+        history: []
+        patch:
+          externalDocs:
+            url: http://developer.wordnik.com/
+          info:
+            x-apisguru-categories:
+              - text
+            title: Wordnik
+            description: >
+              Wordnik is the world's biggest online English dictionary, by
+              number of words
+            x-logo:
+              url: https://wordnik.com/img/logo-wordnik-home.png
+          securityDefinitions:
+            api_key:
+              in: query
+              name: _apikey
+              type: apiKey
+          security:
+            - api_key: []
+        run: false
+undefined:
+  apis:
+    "":
+      "1.12":
+        name: openapi.yaml
+        openapi: 3.0.0
+        preferred: null
+        filename: /home/mike/node/openapi-directory/APIs/twitter.com/labs/1.12/openapi.yaml
+        source: {}
+        history: null
+        patch:
+          info:
+            x-apisguru-categories:
+              - social
+            contact:
+              x-twitter: twitter
+            x-logo:
+              url: https://twitter.com/twitter/profile_image?size=original
+        run: false
+      "2.4":
+        name: openapi.yaml
+        openapi: 3.0.0
+        preferred: null
+        filename: /home/mike/node/openapi-directory/APIs/twitter.com/labs/2.4/openapi.yaml
+        source: {}
+        history: null
+        patch:
+          info:
+            x-apisguru-categories:
+              - social
+            contact:
+              x-twitter: twitter
+            x-logo:
+              url: https://twitter.com/twitter/profile_image?size=original
+        run: false
