@@ -19,6 +19,7 @@ APIs/raw.githubusercontent.com/
 
 # metadata
 metadata/
+resources/*.sqlite
 
 # Logs
 /logs/

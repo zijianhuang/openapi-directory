@@ -3,11 +3,19 @@
 const fs = require('fs');
 const path = require('path');
 
+const keyv = require('keyv');
 const rf = require('node-readfiles');
 const sortobject = require('deep-sort-object');
 const yaml = require('yaml');
 
+const now = new Date();
 let metadata = {};
+const cacheFile = path.resolve(__dirname,'..','resources','cache.sqlite');
+const cache = new keyv('sqlite://'+cacheFile);
+
+const colour = process.env.NODE_DISABLE_COLORS ?
+    { red: '', yellow: '', green: '', normal: '' } :
+    { red: '\x1b[31m', yellow: '\x1b[33;1m', green: '\x1b[32m', normal: '\x1b[0m' };
 
 function sortJson(json) {
   json = sortobject(json, function (a, b) {
@@ -52,6 +60,10 @@ function sortJson(json) {
   return sorted;
 }
 
+function clone(o) {
+  return JSON.parse(JSON.stringify(o));
+}
+
 function loadMetadata() {
   const metaStr = fs.readFileSync(path.resolve(__dirname,'..','resources','metadata.yaml'),'utf8');
   metadata = yaml.parse(metaStr);
@@ -71,18 +83,20 @@ async function gather(pathspec) {
       const obj = yaml.parse(content);
       apis[filename] = { swagger: obj.swagger, openapi: obj.openapi, info: obj.info };
       const fdir = path.dirname(filename);
-      let patchfile = path.join(fdir,'..','patch.yaml');
+      let patch = {};
+      let patchfile = path.join(fdir,'..','..','patch.yaml');
       if (fs.existsSync(patchfile)) {
-        const patch = yaml.parse(fs.readFileSync(patchfile,'utf8'));
-        apis[filename].patch = patch;
+        patch = yaml.parse(fs.readFileSync(patchfile,'utf8'));
       }
-      else {
-        let patchfile = path.join(fdir,'patch.yaml');
-        if (fs.existsSync(patchfile)) {
-          const patch = yaml.parse(fs.readFileSync(patchfile,'utf8'));
-          apis[filename].patch = patch;
-        }
+      patchfile = path.join(fdir,'..','patch.yaml');
+      if (fs.existsSync(patchfile)) {
+        patch = yaml.parse(fs.readFileSync(patchfile,'utf8'));
       }
+      patchfile = path.join(fdir,'patch.yaml');
+      if (fs.existsSync(patchfile)) {
+        patch = yaml.parse(fs.readFileSync(patchfile,'utf8'));
+      }
+      if (Object.keys(patch).length) apis[filename].patch = patch;
     }
   });
   return apis;
@@ -107,15 +121,15 @@ function populateMetadata(apis) {
     const version = comp.pop();
     const serviceName = api.info['x-serviceName'] ? api.info['x-serviceName'] : '';
     const providerName = api.info['x-providerName'];
-    const preferred = api.info['x-preferred'] ? api.info['x-preferred'] : undefined;
+    const preferred = (typeof api.info['x-preferred'] === 'boolean') ? api.info['x-preferred'] : undefined;
     if (serviceName) comp.pop();
     comp.pop(); // providerName
     const filepath = comp.join('/');
     const origin = api.info['x-origin'] || [ {} ];
     const source = origin.pop();
     const history = api.info['x-origin'];
-    const entry = { name, openapi, preferred, filename, source, history, patch: api.patch, run: true };
-    if (!metadata[providerName]) metadata[providerName] = { apis: {} };
+    const entry = { name, openapi, preferred, filename, source, history, patch: api.patch, run: true, runDate: now };
+    if (!metadata[providerName]) metadata[providerName] = { driver: 'url', apis: {} };
     if (!metadata[providerName].apis[serviceName]) metadata[providerName].apis[serviceName] = {};
     if (!metadata[providerName].apis[serviceName][version]) metadata[providerName].apis[serviceName][version] = {};
     metadata[providerName].apis[serviceName][version] = Object.assign({},metadata[providerName].apis[serviceName][version],entry);
@@ -144,12 +158,15 @@ function getCandidates() {
 }
 
 module.exports = {
+  colour,
   sortJson,
+  clone,
   loadMetadata,
   saveMetadata,
   gather,
   populateMetadata,
   metadata,
+  cache,
   runDrivers,
   getCandidates
 };
