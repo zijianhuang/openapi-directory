@@ -12,6 +12,8 @@ const now = new Date();
 let metadata = {};
 const cacheFile = path.resolve(__dirname,'..','resources','cache.sqlite');
 const cache = new keyv('sqlite://'+cacheFile);
+const logoFile = path.resolve(__dirname,'..','resources','logos.sqlite');
+const logos = new keyv('sqlite://'+logoFile);
 
 const colour = process.env.NODE_DISABLE_COLORS ?
     { red: '', yellow: '', green: '', normal: '' } :
@@ -167,6 +169,7 @@ module.exports = {
   populateMetadata,
   metadata,
   cache,
+  logos,
   runDrivers,
   getCandidates
 };
