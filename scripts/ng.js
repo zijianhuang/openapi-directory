@@ -1,5 +1,6 @@
 //@ts-check
 
+const cp = require('child_process');
 const fs = require('fs');
 const path = require('path');
 
@@ -14,10 +15,23 @@ const cacheFile = path.resolve(__dirname,'..','resources','cache.sqlite');
 const cache = new keyv('sqlite://'+cacheFile);
 const logoFile = path.resolve(__dirname,'..','resources','logos.sqlite');
 const logos = new keyv('sqlite://'+logoFile);
+const drivers = new Map();
 
 const colour = process.env.NODE_DISABLE_COLORS ?
     { red: '', yellow: '', green: '', normal: '' } :
     { red: '\x1b[31m', yellow: '\x1b[33;1m', green: '\x1b[32m', normal: '\x1b[0m' };
+
+const driverFuncs = {
+  url: async function(provider) {
+  },
+  google: async function(provider) {
+    console.log('  ',provider.masterUrl);
+  }
+  github: async function(provider) {
+    console.log('  ',provider.masterUrl);
+    cp.execSync('wget -O '+masterUrl+' | tar -C ../cache -xzf');
+  }
+};
 
 function sortJson(json) {
   json = sortobject(json, function (a, b) {
@@ -135,11 +149,16 @@ function populateMetadata(apis) {
     if (!metadata[providerName].apis[serviceName]) metadata[providerName].apis[serviceName] = {};
     if (!metadata[providerName].apis[serviceName][version]) metadata[providerName].apis[serviceName][version] = {};
     metadata[providerName].apis[serviceName][version] = Object.assign({},metadata[providerName].apis[serviceName][version],entry);
+    drivers.set(metadata[providerName].driver,metadata[providerName]);
   }
   return metadata;
 }
 
 async function runDrivers() {
+  for (let driver of drivers.keys()) {
+    console.log('Running driver',driver);
+    await driverFuncs[driver](drivers.get(driver));
+  }
 }
 
 function getCandidates() {
