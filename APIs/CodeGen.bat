@@ -1,5 +1,5 @@
 set currentDir=%~dp0
-set yamlDir=amazonaws.com\appstream
+set yamlDir=amazonaws.com\dataexchange
 cd %yamlDir%
-c:\green\openapiclientgen\Fonlow.OpenApiClientGen.exe 2016-12-01\openapi.yaml ..\DemoCodeGen.json
+c:\green\openapiclientgen\Fonlow.OpenApiClientGen.exe 2017-07-25\openapi.yaml ..\DemoCodeGen.json
 cd %currentDir%
