@@ -1339,293 +1339,293 @@ export namespace My_Demo_Client {
 
 		/**
 		 * Lists origin access identities.
-		 * Get /2019-03-26/origin-access-identity/cloudfront
+		 * Get 2019-03-26/origin-access-identity/cloudfront
 		 * @param {string} Marker Use this when paginating results to indicate where to begin in your list of origin access identities. The results include identities in the list that occur after the marker. To get the next page of results, set the <code>Marker</code> to the value of the <code>NextMarker</code> from the current page's response (which is also the ID of the last identity on that page).
 		 * @param {string} MaxItems The maximum number of origin access identities you want in the response body. 
 		 * @return {void} Success
 		 */
 		ListCloudFrontOriginAccessIdentities2019_03_26(Marker: string, MaxItems: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/origin-access-identity/cloudfront?Marker=' + (Marker == null ? '' : encodeURIComponent(Marker)) + '&MaxItems=' + (MaxItems == null ? '' : encodeURIComponent(MaxItems)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/origin-access-identity/cloudfront?Marker=' + (Marker == null ? '' : encodeURIComponent(Marker)) + '&MaxItems=' + (MaxItems == null ? '' : encodeURIComponent(MaxItems)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * List CloudFront distributions.
-		 * Get /2019-03-26/distribution
+		 * Get 2019-03-26/distribution
 		 * @param {string} Marker Use this when paginating results to indicate where to begin in your list of distributions. The results include distributions in the list that occur after the marker. To get the next page of results, set the <code>Marker</code> to the value of the <code>NextMarker</code> from the current page's response (which is also the ID of the last distribution on that page).
 		 * @param {string} MaxItems The maximum number of distributions you want in the response body.
 		 * @return {void} Success
 		 */
 		ListDistributions2019_03_26(Marker: string, MaxItems: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/distribution?Marker=' + (Marker == null ? '' : encodeURIComponent(Marker)) + '&MaxItems=' + (MaxItems == null ? '' : encodeURIComponent(MaxItems)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/distribution?Marker=' + (Marker == null ? '' : encodeURIComponent(Marker)) + '&MaxItems=' + (MaxItems == null ? '' : encodeURIComponent(MaxItems)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * List all field-level encryption configurations that have been created in CloudFront for this account.
-		 * Get /2019-03-26/field-level-encryption
+		 * Get 2019-03-26/field-level-encryption
 		 * @param {string} Marker Use this when paginating results to indicate where to begin in your list of configurations. The results include configurations in the list that occur after the marker. To get the next page of results, set the <code>Marker</code> to the value of the <code>NextMarker</code> from the current page's response (which is also the ID of the last configuration on that page). 
 		 * @param {string} MaxItems The maximum number of field-level encryption configurations you want in the response body. 
 		 * @return {void} Success
 		 */
 		ListFieldLevelEncryptionConfigs2019_03_26(Marker: string, MaxItems: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/field-level-encryption?Marker=' + (Marker == null ? '' : encodeURIComponent(Marker)) + '&MaxItems=' + (MaxItems == null ? '' : encodeURIComponent(MaxItems)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/field-level-encryption?Marker=' + (Marker == null ? '' : encodeURIComponent(Marker)) + '&MaxItems=' + (MaxItems == null ? '' : encodeURIComponent(MaxItems)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Request a list of field-level encryption profiles that have been created in CloudFront for this account.
-		 * Get /2019-03-26/field-level-encryption-profile
+		 * Get 2019-03-26/field-level-encryption-profile
 		 * @param {string} Marker Use this when paginating results to indicate where to begin in your list of profiles. The results include profiles in the list that occur after the marker. To get the next page of results, set the <code>Marker</code> to the value of the <code>NextMarker</code> from the current page's response (which is also the ID of the last profile on that page). 
 		 * @param {string} MaxItems The maximum number of field-level encryption profiles you want in the response body. 
 		 * @return {void} Success
 		 */
 		ListFieldLevelEncryptionProfiles2019_03_26(Marker: string, MaxItems: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/field-level-encryption-profile?Marker=' + (Marker == null ? '' : encodeURIComponent(Marker)) + '&MaxItems=' + (MaxItems == null ? '' : encodeURIComponent(MaxItems)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/field-level-encryption-profile?Marker=' + (Marker == null ? '' : encodeURIComponent(Marker)) + '&MaxItems=' + (MaxItems == null ? '' : encodeURIComponent(MaxItems)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Lists invalidation batches.
-		 * Get /2019-03-26/distribution/{DistributionId}/invalidation
+		 * Get 2019-03-26/distribution/{DistributionId}/invalidation
 		 * @param {string} DistributionId The distribution's ID.
 		 * @param {string} Marker Use this parameter when paginating results to indicate where to begin in your list of invalidation batches. Because the results are returned in decreasing order from most recent to oldest, the most recent results are on the first page, the second page will contain earlier results, and so on. To get the next page of results, set <code>Marker</code> to the value of the <code>NextMarker</code> from the current page's response. This value is the same as the ID of the last invalidation batch on that page. 
 		 * @param {string} MaxItems The maximum number of invalidation batches that you want in the response body.
 		 * @return {void} Success
 		 */
 		ListInvalidations2019_03_26(DistributionId: string, Marker: string, MaxItems: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/distribution/' + (DistributionId == null ? '' : encodeURIComponent(DistributionId)) + '/invalidation&Marker=' + (Marker == null ? '' : encodeURIComponent(Marker)) + '&MaxItems=' + (MaxItems == null ? '' : encodeURIComponent(MaxItems)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/distribution/' + (DistributionId == null ? '' : encodeURIComponent(DistributionId)) + '/invalidation&Marker=' + (Marker == null ? '' : encodeURIComponent(Marker)) + '&MaxItems=' + (MaxItems == null ? '' : encodeURIComponent(MaxItems)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * List all public keys that have been added to CloudFront for this account.
-		 * Get /2019-03-26/public-key
+		 * Get 2019-03-26/public-key
 		 * @param {string} Marker Use this when paginating results to indicate where to begin in your list of public keys. The results include public keys in the list that occur after the marker. To get the next page of results, set the <code>Marker</code> to the value of the <code>NextMarker</code> from the current page's response (which is also the ID of the last public key on that page). 
 		 * @param {string} MaxItems The maximum number of public keys you want in the response body. 
 		 * @return {void} Success
 		 */
 		ListPublicKeys2019_03_26(Marker: string, MaxItems: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/public-key?Marker=' + (Marker == null ? '' : encodeURIComponent(Marker)) + '&MaxItems=' + (MaxItems == null ? '' : encodeURIComponent(MaxItems)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/public-key?Marker=' + (Marker == null ? '' : encodeURIComponent(Marker)) + '&MaxItems=' + (MaxItems == null ? '' : encodeURIComponent(MaxItems)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * List streaming distributions.
-		 * Get /2019-03-26/streaming-distribution
+		 * Get 2019-03-26/streaming-distribution
 		 * @param {string} Marker The value that you provided for the <code>Marker</code> request parameter.
 		 * @param {string} MaxItems The value that you provided for the <code>MaxItems</code> request parameter.
 		 * @return {void} Success
 		 */
 		ListStreamingDistributions2019_03_26(Marker: string, MaxItems: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/streaming-distribution?Marker=' + (Marker == null ? '' : encodeURIComponent(Marker)) + '&MaxItems=' + (MaxItems == null ? '' : encodeURIComponent(MaxItems)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/streaming-distribution?Marker=' + (Marker == null ? '' : encodeURIComponent(Marker)) + '&MaxItems=' + (MaxItems == null ? '' : encodeURIComponent(MaxItems)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Delete an origin access identity.
-		 * Delete /2019-03-26/origin-access-identity/cloudfront/{Id}
+		 * Delete 2019-03-26/origin-access-identity/cloudfront/{Id}
 		 * @param {string} Id The origin access identity's ID.
 		 * @return {void} 
 		 */
 		DeleteCloudFrontOriginAccessIdentity2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/origin-access-identity/cloudfront/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'delete', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/origin-access-identity/cloudfront/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'delete', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Get the information about an origin access identity.
-		 * Get /2019-03-26/origin-access-identity/cloudfront/{Id}
+		 * Get 2019-03-26/origin-access-identity/cloudfront/{Id}
 		 * @param {string} Id The identity's ID.
 		 * @return {void} Success
 		 */
 		GetCloudFrontOriginAccessIdentity2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/origin-access-identity/cloudfront/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/origin-access-identity/cloudfront/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Delete a distribution.
-		 * Delete /2019-03-26/distribution/{Id}
+		 * Delete 2019-03-26/distribution/{Id}
 		 * @param {string} Id The distribution ID. 
 		 * @return {void} 
 		 */
 		DeleteDistribution2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/distribution/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'delete', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/distribution/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'delete', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Get the information about a distribution.
-		 * Get /2019-03-26/distribution/{Id}
+		 * Get 2019-03-26/distribution/{Id}
 		 * @param {string} Id The distribution's ID. If the ID is empty, an empty distribution configuration is returned.
 		 * @return {void} Success
 		 */
 		GetDistribution2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/distribution/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/distribution/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Remove a field-level encryption configuration.
-		 * Delete /2019-03-26/field-level-encryption/{Id}
+		 * Delete 2019-03-26/field-level-encryption/{Id}
 		 * @param {string} Id The ID of the configuration you want to delete from CloudFront.
 		 * @return {void} 
 		 */
 		DeleteFieldLevelEncryptionConfig2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/field-level-encryption/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'delete', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/field-level-encryption/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'delete', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Get the field-level encryption configuration information.
-		 * Get /2019-03-26/field-level-encryption/{Id}
+		 * Get 2019-03-26/field-level-encryption/{Id}
 		 * @param {string} Id Request the ID for the field-level encryption configuration information.
 		 * @return {void} Success
 		 */
 		GetFieldLevelEncryption2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/field-level-encryption/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/field-level-encryption/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Remove a field-level encryption profile.
-		 * Delete /2019-03-26/field-level-encryption-profile/{Id}
+		 * Delete 2019-03-26/field-level-encryption-profile/{Id}
 		 * @param {string} Id Request the ID of the profile you want to delete from CloudFront.
 		 * @return {void} 
 		 */
 		DeleteFieldLevelEncryptionProfile2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/field-level-encryption-profile/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'delete', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/field-level-encryption-profile/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'delete', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Get the field-level encryption profile information.
-		 * Get /2019-03-26/field-level-encryption-profile/{Id}
+		 * Get 2019-03-26/field-level-encryption-profile/{Id}
 		 * @param {string} Id Get the ID for the field-level encryption profile information.
 		 * @return {void} Success
 		 */
 		GetFieldLevelEncryptionProfile2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/field-level-encryption-profile/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/field-level-encryption-profile/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Remove a public key you previously added to CloudFront.
-		 * Delete /2019-03-26/public-key/{Id}
+		 * Delete 2019-03-26/public-key/{Id}
 		 * @param {string} Id The ID of the public key you want to remove from CloudFront.
 		 * @return {void} 
 		 */
 		DeletePublicKey2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/public-key/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'delete', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/public-key/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'delete', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Get the public key information.
-		 * Get /2019-03-26/public-key/{Id}
+		 * Get 2019-03-26/public-key/{Id}
 		 * @param {string} Id Request the ID for the public key.
 		 * @return {void} Success
 		 */
 		GetPublicKey2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/public-key/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/public-key/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * <p>Delete a streaming distribution. To delete an RTMP distribution using the CloudFront API, perform the following steps.</p> <p> <b>To delete an RTMP distribution using the CloudFront API</b>:</p> <ol> <li> <p>Disable the RTMP distribution.</p> </li> <li> <p>Submit a <code>GET Streaming Distribution Config</code> request to get the current configuration and the <code>Etag</code> header for the distribution. </p> </li> <li> <p>Update the XML document that was returned in the response to your <code>GET Streaming Distribution Config</code> request to change the value of <code>Enabled</code> to <code>false</code>.</p> </li> <li> <p>Submit a <code>PUT Streaming Distribution Config</code> request to update the configuration for your distribution. In the request body, include the XML document that you updated in Step 3. Then set the value of the HTTP <code>If-Match</code> header to the value of the <code>ETag</code> header that CloudFront returned when you submitted the <code>GET Streaming Distribution Config</code> request in Step 2.</p> </li> <li> <p>Review the response to the <code>PUT Streaming Distribution Config</code> request to confirm that the distribution was successfully disabled.</p> </li> <li> <p>Submit a <code>GET Streaming Distribution Config</code> request to confirm that your changes have propagated. When propagation is complete, the value of <code>Status</code> is <code>Deployed</code>.</p> </li> <li> <p>Submit a <code>DELETE Streaming Distribution</code> request. Set the value of the HTTP <code>If-Match</code> header to the value of the <code>ETag</code> header that CloudFront returned when you submitted the <code>GET Streaming Distribution Config</code> request in Step 2.</p> </li> <li> <p>Review the response to your <code>DELETE Streaming Distribution</code> request to confirm that the distribution was successfully deleted.</p> </li> </ol> <p>For information about deleting a distribution using the CloudFront console, see <a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowToDeleteDistribution.html">Deleting a Distribution</a> in the <i>Amazon CloudFront Developer Guide</i>.</p>
-		 * Delete /2019-03-26/streaming-distribution/{Id}
+		 * Delete 2019-03-26/streaming-distribution/{Id}
 		 * @param {string} Id The distribution ID. 
 		 * @return {void} 
 		 */
 		DeleteStreamingDistribution2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/streaming-distribution/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'delete', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/streaming-distribution/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'delete', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Gets information about a specified RTMP distribution, including the distribution configuration.
-		 * Get /2019-03-26/streaming-distribution/{Id}
+		 * Get 2019-03-26/streaming-distribution/{Id}
 		 * @param {string} Id The streaming distribution's ID.
 		 * @return {void} Success
 		 */
 		GetStreamingDistribution2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/streaming-distribution/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/streaming-distribution/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Get the configuration information about an origin access identity.
-		 * Get /2019-03-26/origin-access-identity/cloudfront/{Id}/config
+		 * Get 2019-03-26/origin-access-identity/cloudfront/{Id}/config
 		 * @param {string} Id The identity's ID. 
 		 * @return {void} Success
 		 */
 		GetCloudFrontOriginAccessIdentityConfig2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/origin-access-identity/cloudfront/' + (Id == null ? '' : encodeURIComponent(Id)) + '/config', { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/origin-access-identity/cloudfront/' + (Id == null ? '' : encodeURIComponent(Id)) + '/config', { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Get the configuration information about a distribution.
-		 * Get /2019-03-26/distribution/{Id}/config
+		 * Get 2019-03-26/distribution/{Id}/config
 		 * @param {string} Id The distribution's ID. If the ID is empty, an empty distribution configuration is returned.
 		 * @return {void} Success
 		 */
 		GetDistributionConfig2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/distribution/' + (Id == null ? '' : encodeURIComponent(Id)) + '/config', { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/distribution/' + (Id == null ? '' : encodeURIComponent(Id)) + '/config', { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Get the field-level encryption configuration information.
-		 * Get /2019-03-26/field-level-encryption/{Id}/config
+		 * Get 2019-03-26/field-level-encryption/{Id}/config
 		 * @param {string} Id Request the ID for the field-level encryption configuration information.
 		 * @return {void} Success
 		 */
 		GetFieldLevelEncryptionConfig2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/field-level-encryption/' + (Id == null ? '' : encodeURIComponent(Id)) + '/config', { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/field-level-encryption/' + (Id == null ? '' : encodeURIComponent(Id)) + '/config', { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Get the field-level encryption profile configuration information.
-		 * Get /2019-03-26/field-level-encryption-profile/{Id}/config
+		 * Get 2019-03-26/field-level-encryption-profile/{Id}/config
 		 * @param {string} Id Get the ID for the field-level encryption profile configuration information.
 		 * @return {void} Success
 		 */
 		GetFieldLevelEncryptionProfileConfig2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/field-level-encryption-profile/' + (Id == null ? '' : encodeURIComponent(Id)) + '/config', { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/field-level-encryption-profile/' + (Id == null ? '' : encodeURIComponent(Id)) + '/config', { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Get the information about an invalidation.
-		 * Get /2019-03-26/distribution/{DistributionId}/invalidation/{Id}
+		 * Get 2019-03-26/distribution/{DistributionId}/invalidation/{Id}
 		 * @param {string} DistributionId The distribution's ID.
 		 * @param {string} Id The identifier for the invalidation request, for example, <code>IDFDVBD632BHDS5</code>.
 		 * @return {void} Success
 		 */
 		GetInvalidation2019_03_26(DistributionId: string, Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/distribution/' + (DistributionId == null ? '' : encodeURIComponent(DistributionId)) + '/invalidation/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/distribution/' + (DistributionId == null ? '' : encodeURIComponent(DistributionId)) + '/invalidation/' + (Id == null ? '' : encodeURIComponent(Id)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Return public key configuration informaation
-		 * Get /2019-03-26/public-key/{Id}/config
+		 * Get 2019-03-26/public-key/{Id}/config
 		 * @param {string} Id Request the ID for the public key configuration.
 		 * @return {void} Success
 		 */
 		GetPublicKeyConfig2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/public-key/' + (Id == null ? '' : encodeURIComponent(Id)) + '/config', { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/public-key/' + (Id == null ? '' : encodeURIComponent(Id)) + '/config', { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * Get the configuration information about a streaming distribution.
-		 * Get /2019-03-26/streaming-distribution/{Id}/config
+		 * Get 2019-03-26/streaming-distribution/{Id}/config
 		 * @param {string} Id The streaming distribution's ID.
 		 * @return {void} Success
 		 */
 		GetStreamingDistributionConfig2019_03_26(Id: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/streaming-distribution/' + (Id == null ? '' : encodeURIComponent(Id)) + '/config', { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/streaming-distribution/' + (Id == null ? '' : encodeURIComponent(Id)) + '/config', { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * List the distributions that are associated with a specified AWS WAF web ACL.
-		 * Get /2019-03-26/distributionsByWebACLId/{WebACLId}
+		 * Get 2019-03-26/distributionsByWebACLId/{WebACLId}
 		 * @param {string} Marker Use <code>Marker</code> and <code>MaxItems</code> to control pagination of results. If you have more than <code>MaxItems</code> distributions that satisfy the request, the response includes a <code>NextMarker</code> element. To get the next page of results, submit another request. For the value of <code>Marker</code>, specify the value of <code>NextMarker</code> from the last response. (For the first request, omit <code>Marker</code>.) 
 		 * @param {string} MaxItems The maximum number of distributions that you want CloudFront to return in the response body. The maximum and default values are both 100.
 		 * @param {string} WebACLId The ID of the AWS WAF web ACL that you want to list the associated distributions. If you specify "null" for the ID, the request returns a list of the distributions that aren't associated with a web ACL. 
 		 * @return {void} Success
 		 */
 		ListDistributionsByWebACLId2019_03_26(Marker: string, MaxItems: string, WebACLId: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/distributionsByWebACLId/' + (WebACLId == null ? '' : encodeURIComponent(WebACLId)) + '?Marker=' + (Marker == null ? '' : encodeURIComponent(Marker)) + '&MaxItems=' + (MaxItems == null ? '' : encodeURIComponent(MaxItems)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/distributionsByWebACLId/' + (WebACLId == null ? '' : encodeURIComponent(WebACLId)) + '?Marker=' + (Marker == null ? '' : encodeURIComponent(Marker)) + '&MaxItems=' + (MaxItems == null ? '' : encodeURIComponent(MaxItems)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 
 		/**
 		 * List tags for a CloudFront resource.
-		 * Get /2019-03-26/tagging#Resource
+		 * Get 2019-03-26/tagging#Resource
 		 * @param {string} Resource  An ARN of a CloudFront resource.
 		 * @return {void} Success
 		 */
 		ListTagsForResource2019_03_26(Resource: string, headersHandler?: () => {[header: string]: string}): Promise<Response> {
-			return fetch(this.baseUri + '/2019-03-26/tagging#Resource?Resource=' + (Resource == null ? '' : encodeURIComponent(Resource)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
+			return fetch(this.baseUri + '2019-03-26/tagging#Resource?Resource=' + (Resource == null ? '' : encodeURIComponent(Resource)), { method: 'get', headers: headersHandler ? headersHandler() : undefined });
 		}
 	}
 

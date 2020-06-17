@@ -58,7 +58,7 @@ namespace My.Demo.Client
 		public int Quantity { get; set; }
 		
 		[System.Runtime.Serialization.DataMember()]
-		public @string[] Items { get; set; }
+		public string[] Items { get; set; }
 	}
 	
 	/// <summary>
@@ -165,13 +165,13 @@ namespace My.Demo.Client
 	{
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		allow-all = 0,
+		allow_all = 0,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		https-only = 1,
+		https_only = 1,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		redirect-to-https = 2,
+		redirect_to_https = 2,
 	}
 	
 	/// <summary>
@@ -276,7 +276,7 @@ namespace My.Demo.Client
 	{
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		sni-only = 0,
+		sni_only = 0,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
 		vip = 1,
@@ -296,10 +296,10 @@ namespace My.Demo.Client
 		TLSv1_2016 = 2,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		TLSv1.1_2016 = 3,
+		TLSv1_1_2016 = 3,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		TLSv1.2_2018 = 4,
+		TLSv1_2_2018 = 4,
 	}
 	
 	[System.Runtime.Serialization.DataContract(Name="http://demo.domain/2020/03")]
@@ -336,7 +336,7 @@ namespace My.Demo.Client
 	{
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		http1.1 = 0,
+		http1_1 = 0,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
 		http2 = 1,
@@ -466,7 +466,7 @@ namespace My.Demo.Client
 	{
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		http1.1 = 0,
+		http1_1 = 0,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
 		http2 = 1,
@@ -582,7 +582,7 @@ namespace My.Demo.Client
 		public int Quantity { get; set; }
 		
 		[System.Runtime.Serialization.DataMember()]
-		public @string[] Items { get; set; }
+		public string[] Items { get; set; }
 	}
 	
 	[System.Runtime.Serialization.DataContract(Name="http://demo.domain/2020/03")]
@@ -662,7 +662,7 @@ namespace My.Demo.Client
 		public int Quantity { get; set; }
 		
 		[System.Runtime.Serialization.DataMember()]
-		public @string[] Items { get; set; }
+		public string[] Items { get; set; }
 	}
 	
 	/// <summary>
@@ -1234,13 +1234,13 @@ namespace My.Demo.Client
 	{
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		allow-all = 0,
+		allow_all = 0,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		https-only = 1,
+		https_only = 1,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		redirect-to-https = 2,
+		redirect_to_https = 2,
 	}
 	
 	/// <summary>
@@ -1328,13 +1328,13 @@ namespace My.Demo.Client
 	{
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		allow-all = 0,
+		allow_all = 0,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		https-only = 1,
+		https_only = 1,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		redirect-to-https = 2,
+		redirect_to_https = 2,
 	}
 	
 	[System.Runtime.Serialization.DataContract(Name="http://demo.domain/2020/03")]
@@ -1501,7 +1501,7 @@ namespace My.Demo.Client
 		public int Quantity { get; set; }
 		
 		[System.Runtime.Serialization.DataMember()]
-		public @string[] Items { get; set; }
+		public string[] Items { get; set; }
 	}
 	
 	[System.Runtime.Serialization.DataContract(Name="http://demo.domain/2020/03")]
@@ -2042,13 +2042,13 @@ namespace My.Demo.Client
 	{
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		http-only = 0,
+		http_only = 0,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		match-viewer = 1,
+		match_viewer = 1,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		https-only = 2,
+		https_only = 2,
 	}
 	
 	/// <summary>
@@ -2104,13 +2104,13 @@ namespace My.Demo.Client
 	{
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		http-only = 0,
+		http_only = 0,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		match-viewer = 1,
+		match_viewer = 1,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		https-only = 2,
+		https_only = 2,
 	}
 	
 	/// <summary>
@@ -2272,7 +2272,7 @@ namespace My.Demo.Client
 	{
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		http1.1 = 0,
+		http1_1 = 0,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
 		http2 = 1,
@@ -2290,7 +2290,7 @@ namespace My.Demo.Client
 		public int Quantity { get; set; }
 		
 		[System.Runtime.Serialization.DataMember()]
-		public @string[] Items { get; set; }
+		public string[] Items { get; set; }
 	}
 	
 	/// <summary>
@@ -2321,16 +2321,16 @@ namespace My.Demo.Client
 	{
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		viewer-request = 0,
+		viewer_request = 0,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		viewer-response = 1,
+		viewer_response = 1,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		origin-request = 2,
+		origin_request = 2,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		origin-response = 3,
+		origin_response = 3,
 	}
 	
 	/// <summary>
@@ -2450,7 +2450,7 @@ namespace My.Demo.Client
 		public int Quantity { get; set; }
 		
 		[System.Runtime.Serialization.DataMember()]
-		public @string[] Items { get; set; }
+		public string[] Items { get; set; }
 	}
 	
 	/// <summary>
@@ -2465,7 +2465,7 @@ namespace My.Demo.Client
 		public int Quantity { get; set; }
 		
 		[System.Runtime.Serialization.DataMember()]
-		public @string[] Items { get; set; }
+		public string[] Items { get; set; }
 	}
 	
 	[System.Runtime.Serialization.DataContract(Name="http://demo.domain/2020/03")]
@@ -2498,7 +2498,7 @@ namespace My.Demo.Client
 		public int Quantity { get; set; }
 		
 		[System.Runtime.Serialization.DataMember()]
-		public @string[] Items { get; set; }
+		public string[] Items { get; set; }
 	}
 	
 	[System.Runtime.Serialization.DataContract(Name="http://demo.domain/2020/03")]
@@ -2577,7 +2577,7 @@ namespace My.Demo.Client
 		public int Quantity { get; set; }
 		
 		[System.Runtime.Serialization.DataMember()]
-		public @string[] Items { get; set; }
+		public string[] Items { get; set; }
 	}
 	
 	/// <summary>
@@ -2604,16 +2604,16 @@ namespace My.Demo.Client
 	{
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		viewer-request = 0,
+		viewer_request = 0,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		viewer-response = 1,
+		viewer_response = 1,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		origin-request = 2,
+		origin_request = 2,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		origin-response = 3,
+		origin_response = 3,
 	}
 	
 	/// <summary>
@@ -2708,10 +2708,10 @@ namespace My.Demo.Client
 		TLSv1_2016 = 2,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		TLSv1.1_2016 = 3,
+		TLSv1_1_2016 = 3,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		TLSv1.2_2018 = 4,
+		TLSv1_2_2018 = 4,
 	}
 	
 	/// <summary>
@@ -2867,7 +2867,7 @@ namespace My.Demo.Client
 		[System.ComponentModel.DataAnnotations.Required()]
 		[System.Runtime.Serialization.DataMember()]
 		[System.ComponentModel.DataAnnotations.MinLength(1)]
-		public integer[] Items { get; set; }
+		public string[] Items { get; set; }
 	}
 	
 	/// <summary>
@@ -2945,7 +2945,7 @@ namespace My.Demo.Client
 	{
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		sni-only = 0,
+		sni_only = 0,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
 		vip = 1,
@@ -2979,10 +2979,10 @@ namespace My.Demo.Client
 		TLSv1 = 1,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		TLSv1.1 = 2,
+		TLSv1_1 = 2,
 		
 		[System.Runtime.Serialization.EnumMemberAttribute()]
-		TLSv1.2 = 3,
+		TLSv1_2 = 3,
 	}
 	
 	/// <summary>
@@ -3096,7 +3096,7 @@ namespace My.Demo.Client
 	{
 		
 		[System.Runtime.Serialization.DataMember()]
-		public TagKey[] Items { get; set; }
+		public string[] Items { get; set; }
 	}
 	
 	/// <summary>
@@ -3231,14 +3231,14 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Lists origin access identities.
-		/// ListCloudFrontOriginAccessIdentities2019_03_26 /2019-03-26/origin-access-identity/cloudfront
+		/// ListCloudFrontOriginAccessIdentities2019_03_26 2019-03-26/origin-access-identity/cloudfront
 		/// </summary>
 		/// <param name="Marker">Use this when paginating results to indicate where to begin in your list of origin access identities. The results include identities in the list that occur after the marker. To get the next page of results, set the <code>Marker</code> to the value of the <code>NextMarker</code> from the current page's response (which is also the ID of the last identity on that page).</param>
 		/// <param name="MaxItems">The maximum number of origin access identities you want in the response body. </param>
 		/// <returns>Success</returns>
 		public async Task ListCloudFrontOriginAccessIdentities2019_03_26Async(string Marker, string MaxItems, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/origin-access-identity/cloudfront?Marker=" + (Marker==null? "" : Uri.EscapeDataString(Marker))+"&MaxItems=" + (MaxItems==null? "" : Uri.EscapeDataString(MaxItems));
+			var requestUri = "2019-03-26/origin-access-identity/cloudfront?Marker=" + (Marker==null? "" : Uri.EscapeDataString(Marker))+"&MaxItems=" + (MaxItems==null? "" : Uri.EscapeDataString(MaxItems));
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3260,14 +3260,14 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// List CloudFront distributions.
-		/// ListDistributions2019_03_26 /2019-03-26/distribution
+		/// ListDistributions2019_03_26 2019-03-26/distribution
 		/// </summary>
 		/// <param name="Marker">Use this when paginating results to indicate where to begin in your list of distributions. The results include distributions in the list that occur after the marker. To get the next page of results, set the <code>Marker</code> to the value of the <code>NextMarker</code> from the current page's response (which is also the ID of the last distribution on that page).</param>
 		/// <param name="MaxItems">The maximum number of distributions you want in the response body.</param>
 		/// <returns>Success</returns>
 		public async Task ListDistributions2019_03_26Async(string Marker, string MaxItems, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/distribution?Marker=" + (Marker==null? "" : Uri.EscapeDataString(Marker))+"&MaxItems=" + (MaxItems==null? "" : Uri.EscapeDataString(MaxItems));
+			var requestUri = "2019-03-26/distribution?Marker=" + (Marker==null? "" : Uri.EscapeDataString(Marker))+"&MaxItems=" + (MaxItems==null? "" : Uri.EscapeDataString(MaxItems));
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3289,14 +3289,14 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// List all field-level encryption configurations that have been created in CloudFront for this account.
-		/// ListFieldLevelEncryptionConfigs2019_03_26 /2019-03-26/field-level-encryption
+		/// ListFieldLevelEncryptionConfigs2019_03_26 2019-03-26/field-level-encryption
 		/// </summary>
 		/// <param name="Marker">Use this when paginating results to indicate where to begin in your list of configurations. The results include configurations in the list that occur after the marker. To get the next page of results, set the <code>Marker</code> to the value of the <code>NextMarker</code> from the current page's response (which is also the ID of the last configuration on that page). </param>
 		/// <param name="MaxItems">The maximum number of field-level encryption configurations you want in the response body. </param>
 		/// <returns>Success</returns>
 		public async Task ListFieldLevelEncryptionConfigs2019_03_26Async(string Marker, string MaxItems, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/field-level-encryption?Marker=" + (Marker==null? "" : Uri.EscapeDataString(Marker))+"&MaxItems=" + (MaxItems==null? "" : Uri.EscapeDataString(MaxItems));
+			var requestUri = "2019-03-26/field-level-encryption?Marker=" + (Marker==null? "" : Uri.EscapeDataString(Marker))+"&MaxItems=" + (MaxItems==null? "" : Uri.EscapeDataString(MaxItems));
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3318,14 +3318,14 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Request a list of field-level encryption profiles that have been created in CloudFront for this account.
-		/// ListFieldLevelEncryptionProfiles2019_03_26 /2019-03-26/field-level-encryption-profile
+		/// ListFieldLevelEncryptionProfiles2019_03_26 2019-03-26/field-level-encryption-profile
 		/// </summary>
 		/// <param name="Marker">Use this when paginating results to indicate where to begin in your list of profiles. The results include profiles in the list that occur after the marker. To get the next page of results, set the <code>Marker</code> to the value of the <code>NextMarker</code> from the current page's response (which is also the ID of the last profile on that page). </param>
 		/// <param name="MaxItems">The maximum number of field-level encryption profiles you want in the response body. </param>
 		/// <returns>Success</returns>
 		public async Task ListFieldLevelEncryptionProfiles2019_03_26Async(string Marker, string MaxItems, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/field-level-encryption-profile?Marker=" + (Marker==null? "" : Uri.EscapeDataString(Marker))+"&MaxItems=" + (MaxItems==null? "" : Uri.EscapeDataString(MaxItems));
+			var requestUri = "2019-03-26/field-level-encryption-profile?Marker=" + (Marker==null? "" : Uri.EscapeDataString(Marker))+"&MaxItems=" + (MaxItems==null? "" : Uri.EscapeDataString(MaxItems));
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3347,7 +3347,7 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Lists invalidation batches.
-		/// ListInvalidations2019_03_26 /2019-03-26/distribution/{DistributionId}/invalidation
+		/// ListInvalidations2019_03_26 2019-03-26/distribution/{DistributionId}/invalidation
 		/// </summary>
 		/// <param name="DistributionId">The distribution's ID.</param>
 		/// <param name="Marker">Use this parameter when paginating results to indicate where to begin in your list of invalidation batches. Because the results are returned in decreasing order from most recent to oldest, the most recent results are on the first page, the second page will contain earlier results, and so on. To get the next page of results, set <code>Marker</code> to the value of the <code>NextMarker</code> from the current page's response. This value is the same as the ID of the last invalidation batch on that page. </param>
@@ -3355,7 +3355,7 @@ namespace My.Demo.Client
 		/// <returns>Success</returns>
 		public async Task ListInvalidations2019_03_26Async(string DistributionId, string Marker, string MaxItems, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/distribution/"+ (DistributionId==null? "" : Uri.EscapeDataString(DistributionId))+"/invalidation&Marker=" + (Marker==null? "" : Uri.EscapeDataString(Marker))+"&MaxItems=" + (MaxItems==null? "" : Uri.EscapeDataString(MaxItems));
+			var requestUri = "2019-03-26/distribution/"+ (DistributionId==null? "" : Uri.EscapeDataString(DistributionId))+"/invalidation&Marker=" + (Marker==null? "" : Uri.EscapeDataString(Marker))+"&MaxItems=" + (MaxItems==null? "" : Uri.EscapeDataString(MaxItems));
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3377,14 +3377,14 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// List all public keys that have been added to CloudFront for this account.
-		/// ListPublicKeys2019_03_26 /2019-03-26/public-key
+		/// ListPublicKeys2019_03_26 2019-03-26/public-key
 		/// </summary>
 		/// <param name="Marker">Use this when paginating results to indicate where to begin in your list of public keys. The results include public keys in the list that occur after the marker. To get the next page of results, set the <code>Marker</code> to the value of the <code>NextMarker</code> from the current page's response (which is also the ID of the last public key on that page). </param>
 		/// <param name="MaxItems">The maximum number of public keys you want in the response body. </param>
 		/// <returns>Success</returns>
 		public async Task ListPublicKeys2019_03_26Async(string Marker, string MaxItems, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/public-key?Marker=" + (Marker==null? "" : Uri.EscapeDataString(Marker))+"&MaxItems=" + (MaxItems==null? "" : Uri.EscapeDataString(MaxItems));
+			var requestUri = "2019-03-26/public-key?Marker=" + (Marker==null? "" : Uri.EscapeDataString(Marker))+"&MaxItems=" + (MaxItems==null? "" : Uri.EscapeDataString(MaxItems));
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3406,14 +3406,14 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// List streaming distributions.
-		/// ListStreamingDistributions2019_03_26 /2019-03-26/streaming-distribution
+		/// ListStreamingDistributions2019_03_26 2019-03-26/streaming-distribution
 		/// </summary>
 		/// <param name="Marker">The value that you provided for the <code>Marker</code> request parameter.</param>
 		/// <param name="MaxItems">The value that you provided for the <code>MaxItems</code> request parameter.</param>
 		/// <returns>Success</returns>
 		public async Task ListStreamingDistributions2019_03_26Async(string Marker, string MaxItems, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/streaming-distribution?Marker=" + (Marker==null? "" : Uri.EscapeDataString(Marker))+"&MaxItems=" + (MaxItems==null? "" : Uri.EscapeDataString(MaxItems));
+			var requestUri = "2019-03-26/streaming-distribution?Marker=" + (Marker==null? "" : Uri.EscapeDataString(Marker))+"&MaxItems=" + (MaxItems==null? "" : Uri.EscapeDataString(MaxItems));
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3435,12 +3435,12 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Delete an origin access identity.
-		/// DeleteCloudFrontOriginAccessIdentity2019_03_26 /2019-03-26/origin-access-identity/cloudfront/{Id}
+		/// DeleteCloudFrontOriginAccessIdentity2019_03_26 2019-03-26/origin-access-identity/cloudfront/{Id}
 		/// </summary>
 		/// <param name="Id">The origin access identity's ID.</param>
 		public async Task DeleteCloudFrontOriginAccessIdentity2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/origin-access-identity/cloudfront/"+ (Id==null? "" : Uri.EscapeDataString(Id));
+			var requestUri = "2019-03-26/origin-access-identity/cloudfront/"+ (Id==null? "" : Uri.EscapeDataString(Id));
 			using (var request = new HttpRequestMessage(HttpMethod.Delete, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3462,13 +3462,13 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Get the information about an origin access identity.
-		/// GetCloudFrontOriginAccessIdentity2019_03_26 /2019-03-26/origin-access-identity/cloudfront/{Id}
+		/// GetCloudFrontOriginAccessIdentity2019_03_26 2019-03-26/origin-access-identity/cloudfront/{Id}
 		/// </summary>
 		/// <param name="Id">The identity's ID.</param>
 		/// <returns>Success</returns>
 		public async Task GetCloudFrontOriginAccessIdentity2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/origin-access-identity/cloudfront/"+ (Id==null? "" : Uri.EscapeDataString(Id));
+			var requestUri = "2019-03-26/origin-access-identity/cloudfront/"+ (Id==null? "" : Uri.EscapeDataString(Id));
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3490,12 +3490,12 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Delete a distribution.
-		/// DeleteDistribution2019_03_26 /2019-03-26/distribution/{Id}
+		/// DeleteDistribution2019_03_26 2019-03-26/distribution/{Id}
 		/// </summary>
 		/// <param name="Id">The distribution ID. </param>
 		public async Task DeleteDistribution2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/distribution/"+ (Id==null? "" : Uri.EscapeDataString(Id));
+			var requestUri = "2019-03-26/distribution/"+ (Id==null? "" : Uri.EscapeDataString(Id));
 			using (var request = new HttpRequestMessage(HttpMethod.Delete, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3517,13 +3517,13 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Get the information about a distribution.
-		/// GetDistribution2019_03_26 /2019-03-26/distribution/{Id}
+		/// GetDistribution2019_03_26 2019-03-26/distribution/{Id}
 		/// </summary>
 		/// <param name="Id">The distribution's ID. If the ID is empty, an empty distribution configuration is returned.</param>
 		/// <returns>Success</returns>
 		public async Task GetDistribution2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/distribution/"+ (Id==null? "" : Uri.EscapeDataString(Id));
+			var requestUri = "2019-03-26/distribution/"+ (Id==null? "" : Uri.EscapeDataString(Id));
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3545,12 +3545,12 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Remove a field-level encryption configuration.
-		/// DeleteFieldLevelEncryptionConfig2019_03_26 /2019-03-26/field-level-encryption/{Id}
+		/// DeleteFieldLevelEncryptionConfig2019_03_26 2019-03-26/field-level-encryption/{Id}
 		/// </summary>
 		/// <param name="Id">The ID of the configuration you want to delete from CloudFront.</param>
 		public async Task DeleteFieldLevelEncryptionConfig2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/field-level-encryption/"+ (Id==null? "" : Uri.EscapeDataString(Id));
+			var requestUri = "2019-03-26/field-level-encryption/"+ (Id==null? "" : Uri.EscapeDataString(Id));
 			using (var request = new HttpRequestMessage(HttpMethod.Delete, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3572,13 +3572,13 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Get the field-level encryption configuration information.
-		/// GetFieldLevelEncryption2019_03_26 /2019-03-26/field-level-encryption/{Id}
+		/// GetFieldLevelEncryption2019_03_26 2019-03-26/field-level-encryption/{Id}
 		/// </summary>
 		/// <param name="Id">Request the ID for the field-level encryption configuration information.</param>
 		/// <returns>Success</returns>
 		public async Task GetFieldLevelEncryption2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/field-level-encryption/"+ (Id==null? "" : Uri.EscapeDataString(Id));
+			var requestUri = "2019-03-26/field-level-encryption/"+ (Id==null? "" : Uri.EscapeDataString(Id));
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3600,12 +3600,12 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Remove a field-level encryption profile.
-		/// DeleteFieldLevelEncryptionProfile2019_03_26 /2019-03-26/field-level-encryption-profile/{Id}
+		/// DeleteFieldLevelEncryptionProfile2019_03_26 2019-03-26/field-level-encryption-profile/{Id}
 		/// </summary>
 		/// <param name="Id">Request the ID of the profile you want to delete from CloudFront.</param>
 		public async Task DeleteFieldLevelEncryptionProfile2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/field-level-encryption-profile/"+ (Id==null? "" : Uri.EscapeDataString(Id));
+			var requestUri = "2019-03-26/field-level-encryption-profile/"+ (Id==null? "" : Uri.EscapeDataString(Id));
 			using (var request = new HttpRequestMessage(HttpMethod.Delete, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3627,13 +3627,13 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Get the field-level encryption profile information.
-		/// GetFieldLevelEncryptionProfile2019_03_26 /2019-03-26/field-level-encryption-profile/{Id}
+		/// GetFieldLevelEncryptionProfile2019_03_26 2019-03-26/field-level-encryption-profile/{Id}
 		/// </summary>
 		/// <param name="Id">Get the ID for the field-level encryption profile information.</param>
 		/// <returns>Success</returns>
 		public async Task GetFieldLevelEncryptionProfile2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/field-level-encryption-profile/"+ (Id==null? "" : Uri.EscapeDataString(Id));
+			var requestUri = "2019-03-26/field-level-encryption-profile/"+ (Id==null? "" : Uri.EscapeDataString(Id));
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3655,12 +3655,12 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Remove a public key you previously added to CloudFront.
-		/// DeletePublicKey2019_03_26 /2019-03-26/public-key/{Id}
+		/// DeletePublicKey2019_03_26 2019-03-26/public-key/{Id}
 		/// </summary>
 		/// <param name="Id">The ID of the public key you want to remove from CloudFront.</param>
 		public async Task DeletePublicKey2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/public-key/"+ (Id==null? "" : Uri.EscapeDataString(Id));
+			var requestUri = "2019-03-26/public-key/"+ (Id==null? "" : Uri.EscapeDataString(Id));
 			using (var request = new HttpRequestMessage(HttpMethod.Delete, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3682,13 +3682,13 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Get the public key information.
-		/// GetPublicKey2019_03_26 /2019-03-26/public-key/{Id}
+		/// GetPublicKey2019_03_26 2019-03-26/public-key/{Id}
 		/// </summary>
 		/// <param name="Id">Request the ID for the public key.</param>
 		/// <returns>Success</returns>
 		public async Task GetPublicKey2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/public-key/"+ (Id==null? "" : Uri.EscapeDataString(Id));
+			var requestUri = "2019-03-26/public-key/"+ (Id==null? "" : Uri.EscapeDataString(Id));
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3710,12 +3710,12 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// <p>Delete a streaming distribution. To delete an RTMP distribution using the CloudFront API, perform the following steps.</p> <p> <b>To delete an RTMP distribution using the CloudFront API</b>:</p> <ol> <li> <p>Disable the RTMP distribution.</p> </li> <li> <p>Submit a <code>GET Streaming Distribution Config</code> request to get the current configuration and the <code>Etag</code> header for the distribution. </p> </li> <li> <p>Update the XML document that was returned in the response to your <code>GET Streaming Distribution Config</code> request to change the value of <code>Enabled</code> to <code>false</code>.</p> </li> <li> <p>Submit a <code>PUT Streaming Distribution Config</code> request to update the configuration for your distribution. In the request body, include the XML document that you updated in Step 3. Then set the value of the HTTP <code>If-Match</code> header to the value of the <code>ETag</code> header that CloudFront returned when you submitted the <code>GET Streaming Distribution Config</code> request in Step 2.</p> </li> <li> <p>Review the response to the <code>PUT Streaming Distribution Config</code> request to confirm that the distribution was successfully disabled.</p> </li> <li> <p>Submit a <code>GET Streaming Distribution Config</code> request to confirm that your changes have propagated. When propagation is complete, the value of <code>Status</code> is <code>Deployed</code>.</p> </li> <li> <p>Submit a <code>DELETE Streaming Distribution</code> request. Set the value of the HTTP <code>If-Match</code> header to the value of the <code>ETag</code> header that CloudFront returned when you submitted the <code>GET Streaming Distribution Config</code> request in Step 2.</p> </li> <li> <p>Review the response to your <code>DELETE Streaming Distribution</code> request to confirm that the distribution was successfully deleted.</p> </li> </ol> <p>For information about deleting a distribution using the CloudFront console, see <a href="https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/HowToDeleteDistribution.html">Deleting a Distribution</a> in the <i>Amazon CloudFront Developer Guide</i>.</p>
-		/// DeleteStreamingDistribution2019_03_26 /2019-03-26/streaming-distribution/{Id}
+		/// DeleteStreamingDistribution2019_03_26 2019-03-26/streaming-distribution/{Id}
 		/// </summary>
 		/// <param name="Id">The distribution ID. </param>
 		public async Task DeleteStreamingDistribution2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/streaming-distribution/"+ (Id==null? "" : Uri.EscapeDataString(Id));
+			var requestUri = "2019-03-26/streaming-distribution/"+ (Id==null? "" : Uri.EscapeDataString(Id));
 			using (var request = new HttpRequestMessage(HttpMethod.Delete, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3737,13 +3737,13 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Gets information about a specified RTMP distribution, including the distribution configuration.
-		/// GetStreamingDistribution2019_03_26 /2019-03-26/streaming-distribution/{Id}
+		/// GetStreamingDistribution2019_03_26 2019-03-26/streaming-distribution/{Id}
 		/// </summary>
 		/// <param name="Id">The streaming distribution's ID.</param>
 		/// <returns>Success</returns>
 		public async Task GetStreamingDistribution2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/streaming-distribution/"+ (Id==null? "" : Uri.EscapeDataString(Id));
+			var requestUri = "2019-03-26/streaming-distribution/"+ (Id==null? "" : Uri.EscapeDataString(Id));
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3765,13 +3765,13 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Get the configuration information about an origin access identity.
-		/// GetCloudFrontOriginAccessIdentityConfig2019_03_26 /2019-03-26/origin-access-identity/cloudfront/{Id}/config
+		/// GetCloudFrontOriginAccessIdentityConfig2019_03_26 2019-03-26/origin-access-identity/cloudfront/{Id}/config
 		/// </summary>
 		/// <param name="Id">The identity's ID. </param>
 		/// <returns>Success</returns>
 		public async Task GetCloudFrontOriginAccessIdentityConfig2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/origin-access-identity/cloudfront/"+ (Id==null? "" : Uri.EscapeDataString(Id))+"/config";
+			var requestUri = "2019-03-26/origin-access-identity/cloudfront/"+ (Id==null? "" : Uri.EscapeDataString(Id))+"/config";
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3793,13 +3793,13 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Get the configuration information about a distribution.
-		/// GetDistributionConfig2019_03_26 /2019-03-26/distribution/{Id}/config
+		/// GetDistributionConfig2019_03_26 2019-03-26/distribution/{Id}/config
 		/// </summary>
 		/// <param name="Id">The distribution's ID. If the ID is empty, an empty distribution configuration is returned.</param>
 		/// <returns>Success</returns>
 		public async Task GetDistributionConfig2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/distribution/"+ (Id==null? "" : Uri.EscapeDataString(Id))+"/config";
+			var requestUri = "2019-03-26/distribution/"+ (Id==null? "" : Uri.EscapeDataString(Id))+"/config";
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3821,13 +3821,13 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Get the field-level encryption configuration information.
-		/// GetFieldLevelEncryptionConfig2019_03_26 /2019-03-26/field-level-encryption/{Id}/config
+		/// GetFieldLevelEncryptionConfig2019_03_26 2019-03-26/field-level-encryption/{Id}/config
 		/// </summary>
 		/// <param name="Id">Request the ID for the field-level encryption configuration information.</param>
 		/// <returns>Success</returns>
 		public async Task GetFieldLevelEncryptionConfig2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/field-level-encryption/"+ (Id==null? "" : Uri.EscapeDataString(Id))+"/config";
+			var requestUri = "2019-03-26/field-level-encryption/"+ (Id==null? "" : Uri.EscapeDataString(Id))+"/config";
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3849,13 +3849,13 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Get the field-level encryption profile configuration information.
-		/// GetFieldLevelEncryptionProfileConfig2019_03_26 /2019-03-26/field-level-encryption-profile/{Id}/config
+		/// GetFieldLevelEncryptionProfileConfig2019_03_26 2019-03-26/field-level-encryption-profile/{Id}/config
 		/// </summary>
 		/// <param name="Id">Get the ID for the field-level encryption profile configuration information.</param>
 		/// <returns>Success</returns>
 		public async Task GetFieldLevelEncryptionProfileConfig2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/field-level-encryption-profile/"+ (Id==null? "" : Uri.EscapeDataString(Id))+"/config";
+			var requestUri = "2019-03-26/field-level-encryption-profile/"+ (Id==null? "" : Uri.EscapeDataString(Id))+"/config";
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3877,14 +3877,14 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Get the information about an invalidation.
-		/// GetInvalidation2019_03_26 /2019-03-26/distribution/{DistributionId}/invalidation/{Id}
+		/// GetInvalidation2019_03_26 2019-03-26/distribution/{DistributionId}/invalidation/{Id}
 		/// </summary>
 		/// <param name="DistributionId">The distribution's ID.</param>
 		/// <param name="Id">The identifier for the invalidation request, for example, <code>IDFDVBD632BHDS5</code>.</param>
 		/// <returns>Success</returns>
 		public async Task GetInvalidation2019_03_26Async(string DistributionId, string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/distribution/"+ (DistributionId==null? "" : Uri.EscapeDataString(DistributionId))+"/invalidation/"+ (Id==null? "" : Uri.EscapeDataString(Id));
+			var requestUri = "2019-03-26/distribution/"+ (DistributionId==null? "" : Uri.EscapeDataString(DistributionId))+"/invalidation/"+ (Id==null? "" : Uri.EscapeDataString(Id));
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3906,13 +3906,13 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Return public key configuration informaation
-		/// GetPublicKeyConfig2019_03_26 /2019-03-26/public-key/{Id}/config
+		/// GetPublicKeyConfig2019_03_26 2019-03-26/public-key/{Id}/config
 		/// </summary>
 		/// <param name="Id">Request the ID for the public key configuration.</param>
 		/// <returns>Success</returns>
 		public async Task GetPublicKeyConfig2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/public-key/"+ (Id==null? "" : Uri.EscapeDataString(Id))+"/config";
+			var requestUri = "2019-03-26/public-key/"+ (Id==null? "" : Uri.EscapeDataString(Id))+"/config";
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3934,13 +3934,13 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// Get the configuration information about a streaming distribution.
-		/// GetStreamingDistributionConfig2019_03_26 /2019-03-26/streaming-distribution/{Id}/config
+		/// GetStreamingDistributionConfig2019_03_26 2019-03-26/streaming-distribution/{Id}/config
 		/// </summary>
 		/// <param name="Id">The streaming distribution's ID.</param>
 		/// <returns>Success</returns>
 		public async Task GetStreamingDistributionConfig2019_03_26Async(string Id, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/streaming-distribution/"+ (Id==null? "" : Uri.EscapeDataString(Id))+"/config";
+			var requestUri = "2019-03-26/streaming-distribution/"+ (Id==null? "" : Uri.EscapeDataString(Id))+"/config";
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3962,7 +3962,7 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// List the distributions that are associated with a specified AWS WAF web ACL.
-		/// ListDistributionsByWebACLId2019_03_26 /2019-03-26/distributionsByWebACLId/{WebACLId}
+		/// ListDistributionsByWebACLId2019_03_26 2019-03-26/distributionsByWebACLId/{WebACLId}
 		/// </summary>
 		/// <param name="Marker">Use <code>Marker</code> and <code>MaxItems</code> to control pagination of results. If you have more than <code>MaxItems</code> distributions that satisfy the request, the response includes a <code>NextMarker</code> element. To get the next page of results, submit another request. For the value of <code>Marker</code>, specify the value of <code>NextMarker</code> from the last response. (For the first request, omit <code>Marker</code>.) </param>
 		/// <param name="MaxItems">The maximum number of distributions that you want CloudFront to return in the response body. The maximum and default values are both 100.</param>
@@ -3970,7 +3970,7 @@ namespace My.Demo.Client
 		/// <returns>Success</returns>
 		public async Task ListDistributionsByWebACLId2019_03_26Async(string Marker, string MaxItems, string WebACLId, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/distributionsByWebACLId/"+ (WebACLId==null? "" : Uri.EscapeDataString(WebACLId))+"?Marker=" + (Marker==null? "" : Uri.EscapeDataString(Marker))+"&MaxItems=" + (MaxItems==null? "" : Uri.EscapeDataString(MaxItems));
+			var requestUri = "2019-03-26/distributionsByWebACLId/"+ (WebACLId==null? "" : Uri.EscapeDataString(WebACLId))+"?Marker=" + (Marker==null? "" : Uri.EscapeDataString(Marker))+"&MaxItems=" + (MaxItems==null? "" : Uri.EscapeDataString(MaxItems));
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
@@ -3992,13 +3992,13 @@ namespace My.Demo.Client
 		
 		/// <summary>
 		/// List tags for a CloudFront resource.
-		/// ListTagsForResource2019_03_26 /2019-03-26/tagging#Resource
+		/// ListTagsForResource2019_03_26 2019-03-26/tagging#Resource
 		/// </summary>
 		/// <param name="Resource"> An ARN of a CloudFront resource.</param>
 		/// <returns>Success</returns>
 		public async Task ListTagsForResource2019_03_26Async(string Resource, Action<System.Net.Http.Headers.HttpRequestHeaders> handleHeaders = null)
 		{
-			var requestUri = "/2019-03-26/tagging#Resource?Resource=" + (Resource==null? "" : Uri.EscapeDataString(Resource));
+			var requestUri = "2019-03-26/tagging#Resource?Resource=" + (Resource==null? "" : Uri.EscapeDataString(Resource));
 			using (var request = new HttpRequestMessage(HttpMethod.Get, requestUri))
 			{
 			if (handleHeaders != null)
