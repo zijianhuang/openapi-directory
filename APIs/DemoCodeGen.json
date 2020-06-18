@@ -1,15 +1,16 @@
 {
 	"ClientNamespace": "My.Demo.Client",
-	"ClientLibraryProjectFolderName": "./csharp/clientapi",
+	"ClientLibraryProjectFolderName": "csharp",
 	"ContainerClassName": "DemoClient",
 	"ClientLibraryFileName": "DemoAuto.cs",
-	"ActionNameStrategy": 4,
+	"ActionNameStrategy": 0,
 	"UseEnsureSuccessStatusCodeEx": true,
 	"DecorateDataModelWithDataContract": true,
 	"DataContractNamespace": "http://demo.domain/2020/03",
 	"DataAnnotationsEnabled": true,
 	"DataAnnotationsToComments": true,
 	"HandleHttpRequestHeaders": true,
+	"CreateFolder": true,
 
 	"Plugins": [
 		{

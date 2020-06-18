@@ -1,5 +1,5 @@
 set currentDir=%~dp0
-set yamlDir=akeneo.com
+set yamlDir=bbci.co.uk
 cd %yamlDir%
-c:\green\openapiclientgen\Fonlow.OpenApiClientGen.exe 1.0.0\swagger.yaml DemoCodeGen.json
+c:\green\openapiclientgen\Fonlow.OpenApiClientGen.exe 1.0\openapi.yaml ..\DemoCodeGen.json
 cd %currentDir%
